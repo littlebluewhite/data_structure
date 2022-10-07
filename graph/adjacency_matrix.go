@@ -2,48 +2,49 @@ package main
 
 import "fmt"
 
-var vertices = []string{"A", "B", "C", "D", "E"}
+var vertices2 = []string{"A", "B", "C", "D", "E"}
 
-var edges = [][]string{
-	{"A", "B"},
-	{"A", "D"},
-	{"B", "C"},
-	{"C", "D"},
-	{"C", "E"},
-	{"D", "E"},
+var vertexIdx = map[string]int{
+	"A": 0,
+	"B": 1,
+	"C": 2,
+	"D": 3,
+	"E": 4,
+}
+
+var adjacencyMatrix = [][]int{
+	{0, 1, 0, 1, 0},
+	{1, 0, 1, 0, 0},
+	{0, 1, 0, 1, 1},
+	{1, 0, 1, 0, 1},
+	{0, 0, 1, 1, 0},
 }
 
 func main() {
-	fmt.Println(vertices)
-	fmt.Println(edges)
-	fmt.Println(findAdjacentNodes("C"))
-	fmt.Println(isConnected("A", "E"))
+	fmt.Println(findAdjacentNodes2("C"))
+	fmt.Println(isConnect2("E", "C"))
 }
 
-func findAdjacentNodes(node string) (adjacentNodes []string) {
-	for _, edge := range edges {
-		for idx, s := range edge {
-			if s == node {
-				switch idx {
-				case 0:
-					adjacentNodes = append(adjacentNodes, edge[1])
-				case 1:
-					adjacentNodes = append(adjacentNodes, edge[0])
-				default:
-				}
-			}
+func findAdjacentNodes2(node string) (adjacencyNodes []string) {
+	idx := vertexIdx[node]
+	for i, b := range adjacencyMatrix[idx] {
+		if b == 1 {
+			adjacencyNodes = append(adjacencyNodes, vertices2[i])
 		}
 	}
 	return
 }
 
-func isConnected(node1, node2 string) bool {
-	for _, edge := range edges {
-		if edge[0] == node1 && edge[1] == node2 {
-			return true
-		} else if edge[0] == node2 && edge[1] == node1 {
-			return true
-		}
+func isConnect2(node1, node2 string) bool {
+	idx1 := vertexIdx[node1]
+	idx2 := vertexIdx[node2]
+	if adjacencyMatrix[idx1][idx2] == 1 {
+		return true
+	} else {
+		return false
 	}
-	return false
 }
+
+// time complexity O(v) to find adjacent nodes
+// time complexity O(1) to check if two nodes are connected
+// space complexity O(v^2)
