@@ -13,7 +13,7 @@ func main() {
 	MIA := &common.Node{Value: "MIA"}
 	MCO := &common.Node{Value: "MCO"}
 	PBI := &common.Node{Value: "PBI"}
-	g := &common.Graph{Nodes: []*common.Node{DFW, JFK, LAX, HNL, SAN, EWR, BOS, MIA, MCO, PBI}}
+	g := &common.Graph{Nodes: []common.GraphNode{DFW, JFK, LAX, HNL, SAN, EWR, BOS, MIA, MCO, PBI}}
 	DFW.Connect(LAX)
 	DFW.Connect(JFK)
 	LAX.Connect(HNL)

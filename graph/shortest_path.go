@@ -17,7 +17,7 @@ func main() {
 	Nicolette := &common.Node{Value: "Nicolette"}
 	Mabel := &common.Node{Value: "Mabel"}
 	Liz := &common.Node{Value: "Liz"}
-	g := &common.Graph{Nodes: []*common.Node{
+	g := &common.Graph{Nodes: []common.GraphNode{
 		Hannah, Mary, Mel, Max, Nis, Dan, Chris, Yair, Nicolette, Mabel, Liz}}
 	Hannah.Connect(Mary)
 	Hannah.Connect(Max)
