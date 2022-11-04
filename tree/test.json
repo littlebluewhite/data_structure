@@ -1,0 +1,122 @@
+[
+  {
+    "node_id": "C265",
+    "parent_node_id": 20,
+    "id": 15
+  },
+  {
+    "node_id": "C263",
+    "parent_node_id": 20,
+    "id": 16
+  },
+  {
+    "parent_node_id": 20,
+    "id": 19
+  },
+  {
+    "parent_node_id": 20,
+    "id": 7
+  },
+  {
+    "node_id": "C266",
+    "parent_node_id": 20,
+    "id": 6
+  },
+  {
+    "node_id": "C267",
+    "parent_node_id": 20,
+    "id": 26
+  },
+  {
+    "node_id": "InOut_equip_status_4013917",
+    "parent_node_id": 20,
+    "id": 18
+  },
+  {
+    "parent_node_id": 20,
+    "id": 9
+  },
+  {
+    "parent_node_id": 20,
+    "id": 21
+  },
+  {
+    "node_id": "C268",
+    "parent_node_id": 20,
+    "id": 13
+  },
+  {
+    "node_id": "14F",
+    "parent_node_id": 20,
+    "id": 10
+  },
+  {
+    "node_id": "M158",
+    "parent_node_id": 20,
+    "id": 8
+  },
+  {
+    "parent_node_id": 20,
+    "id": 3
+  },
+  {
+    "parent_node_id": 20,
+    "id": 12
+  },
+  {
+    "parent_node_id": 20,
+    "id": 14
+  },
+  {
+    "node_id": "M157",
+    "parent_node_id": 20,
+    "id": 2
+  },
+  {
+    "parent_node_id": 20,
+    "id": 11
+  },
+  {
+    "node_id": "M154",
+    "parent_node_id": 20,
+    "id": 27
+  },
+  {
+    "node_id": "M155",
+    "parent_node_id": 20,
+    "id": 24
+  },
+  {
+    "parent_node_id": 20,
+    "id": 1
+  },
+  {
+    "node_id": "C270",
+    "parent_node_id": 20,
+    "id": 5
+  },
+  {
+    "node_id": "M156",
+    "parent_node_id": 20,
+    "id": 23
+  },
+  {
+    "node_id": "InOut_equip_status_4014006",
+    "parent_node_id": 20,
+    "id": 25
+  },
+  {
+    "node_id": "C264",
+    "parent_node_id": 20,
+    "id": 4
+  },
+  {
+    "node_id": "C269",
+    "parent_node_id": 20,
+    "id": 22
+  },
+  {
+    "parent_node_id": 20,
+    "id": 17
+  }
+]
