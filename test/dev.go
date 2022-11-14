@@ -2,14 +2,7 @@ package main
 
 import "fmt"
 
-type ASD struct {
-	A int
-	B int
-}
-
 func main() {
-	a := []ASD{{1, 2}}
-	fmt.Println(a)
-	a[0].B = 3
-	fmt.Println(a)
+	fmt.Printf("type: %[1]T, %[1]q, %[1]c, %[1]v\n", []rune{'a', 'b', 'c'})
+	fmt.Println(5 / 3)
 }
