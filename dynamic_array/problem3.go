@@ -14,13 +14,13 @@ import (
 //	'g', 'i', 'v', 'e'
 //]
 
-// message2 = [
+//message2 = [
 //	'o', 'u', 't', 's', 'i', 'd', 'e', ' ',
 //	'p', 'l', 'a', 'y', 'i', 'n', 'g', ' ',
 //	'l', 'o', 'v', 'e', 's', ' ',
 //	'd', 'o', 'g', ' ',
 //	't', 'h', 'e'
-// ]
+//]
 
 func main() {
 	m1 := []rune{
@@ -39,5 +39,5 @@ func main() {
 		't', 'h', 'e',
 	}
 	fmt.Println(string(common.ReverseWords(m1)))
-	fmt.Println(string(common.ReverseWords(m2)))
+	fmt.Printf("%q", common.ReverseWords(m2))
 }
