@@ -52,8 +52,8 @@ func mergeMeetings(meetings []meeting) (result []meeting) {
 			result = append(result, m)
 		} else {
 			if m.StartTime <= result[len(result)-1].EndTime {
-				max := int(math.Max(float64(m.EndTime), float64(result[len(result)-1].EndTime)))
-				result[len(result)-1].EndTime = max
+				_max := int(math.Max(float64(m.EndTime), float64(result[len(result)-1].EndTime)))
+				result[len(result)-1].EndTime = _max
 			} else {
 				result = append(result, m)
 			}
